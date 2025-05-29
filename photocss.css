@@ -1,0 +1,59 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menu/list_gallery.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+/* defaults required for IE6 */
+a {color:#000;}
+a:visited {color:#111;}
+a:active {color:#222;}
+a:hover {text-decoration:none;}
+
+/* Gallery styling */
+
+.photo {position:relative; width:732px; height:382px;}
+.photo ul, .photo ul ul {padding:0; margin:0; border:0; list-style:none; width:215px;}
+.photo ul ul {margin-left:-9999px; height:0; overflow:hidden;}
+.photo ul li {width:215px; background:#ddd; float:left; background:#fff url(button/gallery_2.gif) no-repeat;}
+.photo ul li a.set {display:block; text-align:center; height:30px; line-height:30px; background:#fff url(button/gallery_0.gif) no-repeat; font-family: verdana, arial, sans-serif; font-size:11px; text-decoration:none;}
+
+.photo ul li table {margin:0; padding:0; display:none;}
+
+.photo ul li a.set:hover {background:transparent;}
+.photo ul li:hover a.set {background:transparent;}
+
+.photo ul :hover b {display:block; width:480px; height:360px; background:#f8f8f8; border:1px solid #888; position:absolute; left:250px; top:0;}
+
+.photo ul :hover table
+{padding:0; margin-top:-2px; display:block; border:1px solid #888; border-width:0 1px 1px 1px;}
+
+.photo ul :hover ul
+{margin:0; width:207px; overflow:visible; height:207px; background:transparent;}
+
+.photo ul :hover ul li
+{float:left; display:inline; width:56px; margin:2px 6px; background:transparent;}
+
+.photo ul :hover ul li a
+{background:transparent;}
+
+.photo ul :hover ul li a img.thumb
+{margin:3px; display:block; border:0;}
+
+.photo ul :hover ul li a img.full
+{position:absolute; left:-9999px; top:0; border:0;}
+
+.photo ul :hover ul li a:hover img.thumb
+{margin:0; border:3px solid #fc0;}
+
+.photo ul :hover ul li a:hover
+{background:#fff;}
+
+.photo ul :hover ul li a:hover img.full
+{left:250px; z-index:0; border:1px solid #000;}
+
+.photo .default {width:480px; height:360px; position:absolute; left:250px; top:0; border:1px solid #ddd;}
+ 
